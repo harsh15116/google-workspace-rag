@@ -26,7 +26,7 @@ Content is processed through a pipeline:
 
 1. **Content Retrieval**: Extract text from Google Docs, Sheets, and Calendar
 2. **Chunking**: Break content into semantic chunks with configurable size and overlap
-3. **Embedding Generation**: Generate embeddings for each chunk using OpenAI's text-embedding-3-small model
+3. **Embedding Generation**: Generate embeddings for each chunk using Gemini's embedding-001 model
 4. **Metadata Association**: Maintain relationships between chunks and source documents
 
 ### 3. Vespa Schema and Indexing
@@ -44,7 +44,7 @@ The chat interface:
 
 - Embeds user queries and searches for relevant content
 - Provides source attribution for all responses
-- Uses the AI SDK with OpenAI's GPT-4o model for natural language generation
+- Uses the AI SDK with Gemini's gemini-2.0-flash model for natural language generation
 
 ## Setup Instructions
 
@@ -53,9 +53,5 @@ The chat interface:
 1. Node.js 18+ and npm/yarn
 2. Vespa instance (local or cloud)
 3. Google Cloud Project with OAuth credentials
-4. OpenAI API key
+4. Gemini API key
 
-### Installation
-
-1. Clone the repository
-2. Install dependencies:
